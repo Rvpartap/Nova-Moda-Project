@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#0e0d15" />
+
+		<meta name="description" content="Rivela il tuo stile unico al mondo intero - scopri la nostra collezione di Nova Moda e crea un look che ti rappresenta veramente!" />
+    	<meta name="keywords" content="Fondazione, Ikaros, Shop, Online, FrontEnd, Plugins, Design, E-Commerce, Vinay, Ikram, Iacopo, Hamid, Vestiti, Progetto, Team, Nova, Moda" />
+    	<meta name="author" content="Vinay Rathour" />
+		
+        <title>Checkout - Nova Moda</title>
+        <link rel="icon" href="img/img-icons/favicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="lib/Animate-4/Animate.min.css" />
+        <link rel="stylesheet" type="text/css" href="lib/Bootstrap-5/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="lib/Fontawesome-6/css/all.min.css" />
+        <link href='https://fonts.googleapis.com/css?family=Anton|Passion+One|PT+Sans+Caption' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript" src="lib/Bootstrap-5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/Fontawesome-6/js/all.min.js"></script>
+        <script type="text/javascript" src="lib/Masonry/Masonry.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="lib/css/index.css" />
+    </head>
+    <body class="container">
+        <nav class="container-xxl animate__animated animate__fadeIn animate__delay-1s navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid rounded-4 me-3" src="img/img-icons/logo.PNG" alt="Logo" width="90">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto" aria-label="breadcrumb">
+                        <ol class="nav-item breadcrumb">
+                            <li class="nav-link breadcrumb-item"><a class="text-dark text-decoration-none" href="index.html"><i class="fa-solid fa-house-chimney"></i>&#160; Home</a></li>
+                            <li class="nav-link breadcrumb-item">&#160; <a class="text-dark" href="checkout.html">Checkout</a></li>
+                        </ol>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item space">
+                            <button class="btn btn-outline-dark btn-sm rounded-5 me-2">&#160; <i class="fa-solid fa-right-to-bracket"></i>&#160; Accedi &#160;</button>
+                            <button class="btn btn-dark btn-sm rounded-5">&#160; <i class="fa-solid fa-user-plus"></i>&#160; Registrati &#160;</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+
+        <main class="container-md animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4 rounded-4" src="img/img-icons/logo.PNG" alt="logo" width="100">
+                <h2>Modulo di pagamento</h2>
+            </div>
+        
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Il tuo Carrello</span>
+                        <span class="badge bg-dark rounded-pill">0</span>
+                    </h4>
+                    <ul class="list-group mb-3 rounded-4">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div class="text-dark placeholder-glow">
+                                <h6 class="my-0">Oggetto</h6>
+                                <span class="placeholder col-12" style="width: 200px;"></span>
+                            </div>
+                            <span class="text-body-secondary">€00.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                            <div class="text-success placeholder-glow">
+                                <h6 class="my-0">Codice Promo</h6>
+                                <span class="placeholder col-12" style="width: 200px;"></span>
+                            </div>
+                            <span class="text-success">€00.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Totale (EUR)</span>
+                            <strong>€00.00</strong>
+                        </li>
+                    </ul>
+        
+                    <form class="card rounded-5 p-2">
+                        <div class="input-group">
+                            <input type="text" class="rounded-start-pill form-control" placeholder="Codice Promo">
+                            <button type="submit"class="rounded-end-pill btn btn-dark">Riscattare</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Indirizzo di fatturazione</h4>
+                    <form class="needs-validation">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Nome</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-user"></i></span>
+                                    <input type="text" class="rounded-end-pill form-control" id="firstName" placeholder="Nome" value="" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Cognome</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-users-line"></i></span>
+                                    <input type="text" class="rounded-end-pill form-control" id="lastName" placeholder="Cognome" value="" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="username" class="form-label">Nome Utente</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-at"></i></span>
+                                    <input type="text" class="rounded-end-pill form-control" id="username" placeholder="Nome Utente" required>
+                                </div>
+                            </div>
+        
+                            <div class="col-12">
+                                <label for="email" class="form-label">E-Mail</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-envelope"></i></span>
+                                    <input type="email" class="rounded-end-pill form-control" id="email" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+        
+                            <div class="col-12">
+                                <label for="address" class="form-label">Indirizzo</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-location-dot"></i></span>
+                                    <input type="text" class="rounded-end-pill form-control" id="address" placeholder="Via e Numero Civico" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="country" class="form-label">Nazione</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-earth-europe"></i></span>
+                                    <select class="rounded-end-pill form-select" id="country" required>
+                                        <option value="">Seleziona...</option>
+                                        <option>Italia</option>
+                                    </select>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">Regione</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-flag"></i></span>
+                                    <select class="rounded-end-pill form-select" id="state" required>
+                                        <option value="">Seleziona...</option>
+                                        <option>Lombardia</option>
+                                        <option>Lazio</option>
+                                        <option>Campania</option>
+                                        <option>Sicilia</option>
+                                        <option>Veneto</option>
+                                        <option>Emilia Romagna</option>
+                                        <option>Piemonte</option>
+                                        <option>Puglia</option>
+                                        <option>Toscana</option>
+                                        <option>Calabria</option>
+                                        <option>Sardegna</option>
+                                        <option>Liguria</option>
+                                        <option>Marche</option>
+                                        <option>Abruzzo</option>
+                                        <option>Friuli Venezia Giulia</option>
+                                        <option>Trentino Alto Adige</option>
+                                        <option>Umbria</option>
+                                        <option>Basilicata</option>
+                                        <option>Molise</option>
+                                        <option>Valle d’Aosta</option>
+                                    </select>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4">
+                                <label for="zip" class="form-label">Codice Postale</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160<i class="fa-solid fa-hashtag"></i></span>
+                                    <input type="text" class="rounded-end-pill form-control" id="zip" placeholder="" required>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <hr class="my-4">
+        
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">Salva queste informazioni per la prossima volta</label>
+                        </div>
+        
+                        <hr class="my-4">
+        
+                        <h4 class="mb-3">Pagamento</h4>
+        
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="rounded-5 form-check-input" checked required>
+                                <label class="form-check-label" for="credit">Carta di Credito</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="rounded-5 form-check-input" required>
+                                <label class="form-check-label" for="debit">Carta di Debito</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="rounded-5 form-check-input" required>
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+        
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Nome sulla Carta</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-address-card"></i></span>
+                                    <input type="text" class="rounded-end-pill form-control" id="cc-name" placeholder="" required>
+                                </div>
+                                <small class="text-body-secondary">Nome completo come visualizzato sulla carta</small>
+                            </div>
+        
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Numero di carta di credito</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-credit-card"></i></span>
+                                    <input type="text" class="rounded-end-pill form-control" id="cc-number" placeholder="" required>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-6">
+                                <label for="cc-expiration" class="form-label">Scadenza</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-caret-right"></i></span>
+                                    <input type="text" class="rounded-end-pill form-control" id="cc-expiration" placeholder="" required>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-6">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <div class="input-group has-validation">
+                                    <span class="rounded-start-pill input-group-text">&#160;<i class="fa-solid fa-caret-right"></i></span>
+                                    <input type="text" class="rounded-end-pill form-control" id="cc-cvv" placeholder="" required>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <hr class="my-4">
+        
+                        <button class="w-100 rounded-5 btn btn-dark btn-lg" type="submit">Conferma</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+
+        <div class="container-sm animate__animated animate__fadeIn animate__delay-1s">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-5 mb-3 border-top">
+                <div class="col-md-4 mb-3 mx-2 pe-5">
+                    <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <img class="img-fluid rounded-5" src="img/img-icons/logo.PNG" width="150" />
+                    </a>
+                    <p class="text-body-secondary">&copy; 2023 - Nova Moda</p>
+                    <hr>
+                    <div class="mb-3">
+                        <form>
+                            <h5>Iscrivi alla nostra newsletter</h5>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <div class="input-group mb-3">
+                                    <label for="newsletter" class="visually-hidden">Indirizzo Email</label>
+                                    <input id="newsletter" type="email" class="form-control" placeholder="Indirizzo Email" aria-describedby="button-addon" required="true" />
+                                    <button class="btn btn-dark rounded-0" type="button" id="button-addon">Iscriviti</button>
+                                </div>
+                            </div>
+                            <p>Iscrivendoti alla nostra newsletter puoi ricevere informazioni sulle prossime offerte e anche cupons.</p>
+                        </form>
+                        <ul class="list-unstyled d-flex">
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-pinterest fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-solid fa-rss fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col mb-3 mx-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><h5><i class="fa-solid fa-person"></i>&#160; Uomo</h5></li>
+                        <li class="nav-item mb-2"><a href="man.html" class="nav-link p-0 text-body-secondary">Vestiti Uomo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offerte sui vestiti dei Uomini</a></li>
+                        <li class="nav-item my-2 mt-3"><h5><i class="fa-solid fa-person-dress"></i>&#160; Donna</h5>
+                        <li class="nav-item mb-2"><a href="woman.html" class="nav-link p-0 text-body-secondary">Vestiti Donne</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offerte sui vestiti delle Donne</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 mx-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><h5><i class="fa-solid fa-child-reaching"></i>&#160; Bambini</h5></li>
+                        <li class="nav-item mb-2"><a href="kids.html" class="nav-link p-0 text-body-secondary">Vestiti Bambini</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offerte sui vestiti dei Bambini</a></li>
+                        <li class="nav-item mb-2 mt-3"><h5><i class="fa-solid fa-masks-theater"></i>&#160; Novità Cosplay</h5></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cosplay per Uomo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cosplay per Donna</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cosplay per Bambini</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 mx-2">
+                    <h5><i class="fa-solid fa-circle-info"></i>&#160; Altro...</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Profilo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Carrello</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Contatti</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Assistenza</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Su di noi...</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Politica sui Dati</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <button onclick="topFunction()" id="GoTop" title="Go to top" class="animate__animated animate__fadeInLeft">&#160;&#160;<i class="fa-solid fa-circle-arrow-up fa-lg"></i>&#160;&#160;</button>
+        <button id="Search" class="openBtn animate__animated animate__fadeInLeft" onclick="openSearch()">&#160;&#160;<i class="fa-solid fa-magnifying-glass fa-lg"></i>&#160;&#160;</button>
+        <div id="myOverlay" class="overlay animate__animated animate__fadeIn">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa-solid fa-xmark fa-1x"></i></span>
+            <div class="overlay-content">
+                <form>
+                    <img class="img-fluid rounded-4 mb-5 m-auto" src="img/img-icons/logo.PNG" alt="Logo" width="150">
+                    <h3 class="text-light mb-5">Usa la barra di ricerca per trovare il prodotto che cerchi...</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="search" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon" />
+                        <button class="btn btn-lg btn-outline-light border-start" type="button" id="button-addon"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            let mybutton = document.getElementById("GoTop");
+	
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+
+            function openSearch() {
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function closeSearch() {
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+    </body>
+</html>

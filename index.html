@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#0e0d15" />
+
+		<meta name="description" content="Rivela il tuo stile unico al mondo intero - scopri la nostra collezione di Nova Moda e crea un look che ti rappresenta veramente!" />
+    	<meta name="keywords" content="Fondazione, Ikaros, Shop, Online, FrontEnd, Plugins, Design, E-Commerce, Vinay, Ikram, Iacopo, Hamid, Vestiti, Progetto, Team, Nova, Moda" />
+    	<meta name="author" content="Vinay Rathour" />
+		
+        <title>Home Page - Nova Moda</title>
+        <link rel="icon" href="img/img-icons/favicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="lib/Animate-4/Animate.min.css" />
+        <link rel="stylesheet" type="text/css" href="lib/Bootstrap-5/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="lib/Fontawesome-6/css/all.min.css" />
+
+        <script type="text/javascript" src="lib/Bootstrap-5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/Fontawesome-6/js/all.min.js"></script>
+        <script type="text/javascript" src="lib/Masonry/Masonry.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="lib/css/index.css" />
+    </head>
+    <body class="container">
+        <nav class="container-xxl animate__animated animate__fadeIn animate__delay-1s navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid rounded-4 me-3" src="img/img-icons/logo.PNG" alt="Logo" width="90">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="man.html">Uomo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="woman.html">Donna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Bambini</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#links">Altri Links...</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item space">
+                            <button class="btn btn-outline-dark btn-sm rounded-5 me-2">&#160; <i class="fa-solid fa-right-to-bracket"></i>&#160; Accedi &#160;</button>
+                            <button class="btn btn-dark btn-sm rounded-5">&#160; <i class="fa-solid fa-user-plus"></i>&#160; Registrati &#160;</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-sm row my-4 text-center" style="padding-right: .5rem;">
+            <div class="col-lg-4 my-2 animate__animated animate__fadeInUp animate__delay-1s px-4">
+                <a href="man.html">
+                    <div class="image-zoom rounded-5 shadow-lg">
+                        <img src="img/bg/man.png" alt="man" width="80%" />
+                        <div class="image-text">&#160; Uomo &#160;</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 my-2 animate__animated animate__fadeInUp animate__delay-1s px-4">
+                <a href="woman.html">
+                    <div class="image-zoom rounded-5 shadow-lg">
+                        <img src="img/bg/woman.png" alt="woman" width="100%" />
+                        <div class="image-text">&#160; Donna &#160;</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 my-2 animate__animated animate__fadeInUp animate__delay-1s px-4">
+                <a href="kids.html">
+                    <div class="image-zoom rounded-5 shadow-lg">
+                        <img src="img/bg/kids.png" alt="kids" width="100%" />
+                        <div class="image-text">&#160; Bambini &#160;</div>
+                    </div>
+                </a>
+            </div>
+        </div>  
+        <div class="container-sm animate__animated animate__fadeIn animate__delay-1s" id="links">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-5 mb-4 border-top">
+                <div class="col-md-4 mb-3 mx-2 pe-5">
+                    <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <img class="img-fluid rounded-5" src="img/img-icons/logo.PNG" width="150" />
+                    </a>
+                    <p class="text-body-secondary">&copy; 2023 - Nova Moda</p>
+                    <hr>
+                    <div class="mb-3">
+                        <form>
+                            <h5>Iscrivi alla nostra newsletter</h5>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <div class="input-group mb-3">
+                                    <label for="newsletter" class="visually-hidden">Indirizzo Email</label>
+                                    <input id="newsletter" type="email" class="form-control" placeholder="Indirizzo Email" aria-describedby="button-addon" required="true" />
+                                    <button class="btn btn-dark rounded-0" type="button" id="button-addon">Iscriviti</button>
+                                </div>
+                            </div>
+                            <p>Iscrivendoti alla nostra newsletter puoi ricevere informazioni sulle prossime offerte e anche cupons.</p>
+                        </form>
+                        <ul class="list-unstyled d-flex">
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-pinterest fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-solid fa-rss fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col mb-3 mx-1">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><h5><i class="fa-solid fa-person"></i>&#160; Uomo</h5></li>
+                        <li class="nav-item mb-2"><a href="man.html" class="nav-link p-0 text-body-secondary">Vestiti Uomo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offerte sui vestiti dei Uomini</a></li>
+                        <li class="nav-item my-2 mt-3"><h5><i class="fa-solid fa-person-dress"></i>&#160; Donna</h5>
+                        <li class="nav-item mb-2"><a href="woman.html" class="nav-link p-0 text-body-secondary">Vestiti Donne</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offerte sui vestiti delle Donne</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 mx-1">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><h5><i class="fa-solid fa-child-reaching"></i>&#160; Bambini</h5></li>
+                        <li class="nav-item mb-2"><a href="kids.html" class="nav-link p-0 text-body-secondary">Vestiti Bambini</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offerte sui vestiti dei Bambini</a></li>
+                        <li class="nav-item mb-2 mt-3"><h5><i class="fa-solid fa-masks-theater"></i>&#160; Novità Cosplay</h5></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cosplay per Uomo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cosplay per Donna</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cosplay per Bambini</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 mx-1">
+                    <h5><i class="fa-solid fa-circle-info"></i>&#160; Altro...</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Profilo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Carrello</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Contatti</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Assistenza</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Su di noi...</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Politica sui Dati</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <hr>
+        <p class="mx-3">Pagine nascoste: <a class="text-dark" href="checkout.html">checkout</a> e <a class="text-dark" href="404.html">404 errore</a>.</p>
+
+        <button onclick="topFunction()" id="GoTop" title="Go to top" class="animate__animated animate__fadeInLeft">&#160;&#160;<i class="fa-solid fa-circle-arrow-up fa-lg"></i>&#160;&#160;</button>
+        <button id="Search" class="openBtn animate__animated animate__fadeInLeft" onclick="openSearch()">&#160;&#160;<i class="fa-solid fa-magnifying-glass fa-lg"></i>&#160;&#160;</button>
+        <div id="myOverlay" class="overlay animate__animated animate__fadeIn">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa-solid fa-xmark fa-1x"></i></span>
+            <div class="overlay-content">
+                <form>
+                    <img class="img-fluid rounded-4 mb-5 m-auto" src="img/img-icons/logo.PNG" alt="Logo" width="150">
+                    <h3 class="text-light mb-5">Usa la barra di ricerca per trovare il prodotto che cerchi...</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="search" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon" />
+                        <button class="btn btn-lg btn-outline-light border-start" type="button" id="button-addon"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            let mybutton = document.getElementById("GoTop");
+	
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+
+            function openSearch() {
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function closeSearch() {
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+    </body>
+</html>

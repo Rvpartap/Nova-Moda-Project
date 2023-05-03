@@ -1,0 +1,152 @@
+.container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container-sm {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.container-xxl {
+    max-width: 95%;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-margin-bottom: 0rem;
+}
+
+.no-event {
+    pointer-events: none!important;
+}
+
+.space {
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+}
+
+.img-fit-2 {
+    aspect-ratio: 3/3;
+}
+
+.image-zoom {
+    position: relative;
+    overflow: hidden;
+}
+  
+.image-zoom img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    transition: transform .3s ease;
+}
+  
+.image-zoom:hover img {
+    transform: scale(1.1);
+}
+  
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: #fff;
+    padding: 30px;
+    font-size: 40px;
+    border-radius: 0rem 1rem 0rem 0rem;
+}
+
+#GoTop {
+    display: none;
+    position: fixed;
+    top: 39%;
+    left: 0;
+    z-index: 88;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0 1rem 1rem 0;
+    font-size: 18px;
+    transition: 0.5s;
+}
+ 
+#GoTop:hover {
+    background-color: #111111;
+}
+
+#Search {
+    position: fixed;
+    top: 51%;
+    left: 0;
+    z-index: 88;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0 1rem 1rem 0;
+    font-size: 18px;
+    transition: 0.5s;
+}
+ 
+#Search:hover {
+    background-color: #111111;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.952); 
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 65%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+  
+.overlay .closebtn:hover {
+    color: rgb(187, 27, 35);
+    transition: 1s;
+}
+
+.border-start {
+    border-left: var(--bs-border-width) var(--bs-border-style) #000000;
+}
+
+.col-box {
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    border-radius: 3rem 0rem 3rem 0rem;
+    backdrop-filter: blur(10px) brightness(70%) saturate(130%);
+}
+
+.img-size {
+    width: 200px;
+    border-radius: 2rem 0rem 2rem 0rem;
+}

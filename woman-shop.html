@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#0e0d15" />
+
+		<meta name="description" content="Rivela il tuo stile unico al mondo intero - scopri la nostra collezione di Nova Moda e crea un look che ti rappresenta veramente!" />
+    	<meta name="keywords" content="Fondazione, Ikaros, Shop, Online, FrontEnd, Plugins, Design, E-Commerce, Vinay, Ikram, Iacopo, Hamid, Vestiti, Progetto, Team, Nova, Moda" />
+    	<meta name="author" content="Vinay Rathour" />
+		
+        <title>Area Shop - Donna - Nova Moda</title>
+        <link rel="icon" href="img/img-icons/favicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="lib/Animate-4/Animate.min.css" />
+        <link rel="stylesheet" type="text/css" href="lib/Bootstrap-5/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="lib/Fontawesome-6/css/all.min.css" />
+
+        <script type="text/javascript" src="lib/Bootstrap-5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/Fontawesome-6/js/all.min.js"></script>
+        <script type="text/javascript" src="lib/Masonry/Masonry.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="lib/css/index.css" />
+    </head>
+    <body class="container">
+        <nav class="container-xxl animate__animated animate__fadeIn animate__delay-1s navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid rounded-4 me-3" src="img/img-icons/logo.PNG" alt="Logo" width="90">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto" aria-label="breadcrumb">
+                        <ol class="nav-item breadcrumb">
+                            <li class="nav-link breadcrumb-item"><a class="text-dark text-decoration-none" href="index.html"><i class="fa-solid fa-house-chimney"></i>&#160; Home</a></li>
+                            <li class="nav-link breadcrumb-item">&#160; <a class="text-dark text-decoration-none" href="woman.html">Donna</a></li>
+                            <li class="nav-link breadcrumb-item">&#160; <a class="text-dark" href="woman-shop.html">Shop</a></li>
+                        </ol>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item space">
+                            <button class="btn btn-outline-dark btn-sm rounded-5 me-2">&#160; <i class="fa-solid fa-right-to-bracket"></i>&#160; Accedi &#160;</button>
+                            <button class="btn btn-dark btn-sm rounded-5">&#160; <i class="fa-solid fa-user-plus"></i>&#160; Registrati &#160;</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-xxl animate__animated animate__fadeInUp animate__delay-1s mt-4 mb-2">
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="float-start">&#160;&#160;<i class="fa-solid fa-person-dress"></i>&#160; Prodotti - Donna</h1>
+                </div>
+                <div class="col-md-8">
+                    <div class="btn-toolbar float-end" role="toolbar">
+                        <div class="input-group my-2 pe-3">
+                            <input type="text" class="form-control rounded-0" placeholder="Filtra il prodotto">
+                            <button type="button" class="btn btn-dark rounded-0"><i class="fa-solid fa-filter fa-lg"></i></button>
+                        </div>
+                        <div class="btn-group my-2" role="group">
+                            <button type="button" class="btn btn-dark rounded-0 px-3 position-relative">
+                                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                            </button>
+                            <button type="button" class="btn btn-dark rounded-0 ms-3 px-3 position-relative">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                            </button>
+                            <button onclick="location.href='checkout.html'" type="button" class="btn btn-dark rounded-0 ms-3 px-3 position-relative">
+                                Vai al Checkout &#160;<i class="fa-solid fa-arrow-right fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <hr>
+            <div class="row pt-4" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                    <div class="card shadow rounded-5 mb-3">
+                        <img src="img/Donne/img2.png" class="no-event card-img-top" style="border-radius: 2rem 2rem 0rem 0rem;" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Borsa</h5>
+                            <p class="card-text">Prezzo: €200.00</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-color" class="form-label">Colore:</label>
+                                        <select class="form-select rounded-5" id="product-color">
+                                            <option selected>Seleziona...</option>
+                                            <option value="black">Colore Nero</option>
+                                            <option value="white">Colore Bianco</option>
+                                            <option value="blue">Colore Blu</option>
+                                            <option value="red">Colore Rosso</option>
+                                            <option value="yellow">Colore Giallo</option>
+                                            <option value="purple">Colore Viola</option>
+                                            <option value="silver">Colore Argento</option>
+                                            <option value="golden">Colore Oro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-size" class="form-label">Taglia:</label>
+                                        <select class="form-select rounded-5" id="product-size">
+                                            <option selected>Seleziona...</option>
+                                            <option value="1">Taglia S</option>
+                                            <option value="2">Taglia M</option>
+                                            <option value="3">Taglia L</option>
+                                            <option value="4">Taglia XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <button type="button" class="w-100 rounded-5 btn btn-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Aggiungi al carrello</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn rounded-5 btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                    <div class="card shadow rounded-5 mb-3">
+                        <img src="img/Donne/img4.png" class="no-event card-img-top" style="border-radius: 2rem 2rem 0rem 0rem;" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Abito da Festa</h5>
+                            <p class="card-text">Prezzo: €250.00</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-color" class="form-label">Colore:</label>
+                                        <select class="form-select rounded-5" id="product-color">
+                                            <option selected>Seleziona...</option>
+                                            <option value="black">Colore Nero</option>
+                                            <option value="white">Colore Bianco</option>
+                                            <option value="blue">Colore Blu</option>
+                                            <option value="red">Colore Rosso</option>
+                                            <option value="yellow">Colore Giallo</option>
+                                            <option value="purple">Colore Viola</option>
+                                            <option value="silver">Colore Argento</option>
+                                            <option value="golden">Colore Oro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-size" class="form-label">Taglia:</label>
+                                        <select class="form-select rounded-5" id="product-size">
+                                            <option selected>Seleziona...</option>
+                                            <option value="1">Taglia S</option>
+                                            <option value="2">Taglia M</option>
+                                            <option value="3">Taglia L</option>
+                                            <option value="4">Taglia XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <button type="button" class="w-100 rounded-5 btn btn-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Aggiungi al carrello</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn rounded-5 btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                    <div class="card shadow rounded-5 mb-3">
+                        <img src="img/Donne/img30.png" class="no-event card-img-top" style="border-radius: 2rem 2rem 0rem 0rem;" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantaloncini</h5>
+                            <p class="card-text">Prezzo: €50.00</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-color" class="form-label">Colore:</label>
+                                        <select class="form-select rounded-5" id="product-color">
+                                            <option selected>Seleziona...</option>
+                                            <option value="black">Colore Nero</option>
+                                            <option value="white">Colore Bianco</option>
+                                            <option value="blue">Colore Blu</option>
+                                            <option value="red">Colore Rosso</option>
+                                            <option value="yellow">Colore Giallo</option>
+                                            <option value="purple">Colore Viola</option>
+                                            <option value="silver">Colore Argento</option>
+                                            <option value="golden">Colore Oro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-size" class="form-label">Taglia:</label>
+                                        <select class="form-select rounded-5" id="product-size">
+                                            <option selected>Seleziona...</option>
+                                            <option value="1">Taglia S</option>
+                                            <option value="2">Taglia M</option>
+                                            <option value="3">Taglia L</option>
+                                            <option value="4">Taglia XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <button type="button" class="w-100 rounded-5 btn btn-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Aggiungi al carrello</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn rounded-5 btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                    <div class="card shadow rounded-5 mb-3">
+                        <img src="img/Donne/img28.png" class="no-event card-img-top" style="border-radius: 2rem 2rem 0rem 0rem;" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Intimo</h5>
+                            <p class="card-text">Prezzo: €80.00</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-color" class="form-label">Colore:</label>
+                                        <select class="form-select rounded-5" id="product-color">
+                                            <option selected>Seleziona...</option>
+                                            <option value="black">Colore Nero</option>
+                                            <option value="white">Colore Bianco</option>
+                                            <option value="blue">Colore Blu</option>
+                                            <option value="red">Colore Rosso</option>
+                                            <option value="yellow">Colore Giallo</option>
+                                            <option value="purple">Colore Viola</option>
+                                            <option value="silver">Colore Argento</option>
+                                            <option value="golden">Colore Oro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-size" class="form-label">Taglia:</label>
+                                        <select class="form-select rounded-5" id="product-size">
+                                            <option selected>Seleziona...</option>
+                                            <option value="1">Taglia S</option>
+                                            <option value="2">Taglia M</option>
+                                            <option value="3">Taglia L</option>
+                                            <option value="4">Taglia XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <button type="button" class="w-100 rounded-5 btn btn-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Aggiungi al carrello</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn rounded-5 btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                    <div class="card shadow rounded-5 mb-3">
+                        <img src="img/Donne/img12.png" class="no-event card-img-top" style="border-radius: 2rem 2rem 0rem 0rem;" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Costume</h5>
+                            <p class="card-text">Prezzo: €70.00</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-color" class="form-label">Colore:</label>
+                                        <select class="form-select rounded-5" id="product-color">
+                                            <option selected>Seleziona...</option>
+                                            <option value="black">Colore Nero</option>
+                                            <option value="white">Colore Bianco</option>
+                                            <option value="blue">Colore Blu</option>
+                                            <option value="red">Colore Rosso</option>
+                                            <option value="yellow">Colore Giallo</option>
+                                            <option value="purple">Colore Viola</option>
+                                            <option value="silver">Colore Argento</option>
+                                            <option value="golden">Colore Oro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-size" class="form-label">Taglia:</label>
+                                        <select class="form-select rounded-5" id="product-size">
+                                            <option selected>Seleziona...</option>
+                                            <option value="1">Taglia S</option>
+                                            <option value="2">Taglia M</option>
+                                            <option value="3">Taglia L</option>
+                                            <option value="4">Taglia XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <button type="button" class="w-100 rounded-5 btn btn-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Aggiungi al carrello</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn rounded-5 btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                    <div class="card shadow rounded-5 mb-3">
+                        <img src="img/Donne/img26.png" class="no-event card-img-top" style="border-radius: 2rem 2rem 0rem 0rem;" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Cosplay</h5>
+                            <p class="card-text">Prezzo: €300.00</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-color" class="form-label">Colore:</label>
+                                        <select class="form-select rounded-5" id="product-color">
+                                            <option selected>Seleziona...</option>
+                                            <option value="black">Colore Nero</option>
+                                            <option value="white">Colore Bianco</option>
+                                            <option value="blue">Colore Blu</option>
+                                            <option value="red">Colore Rosso</option>
+                                            <option value="yellow">Colore Giallo</option>
+                                            <option value="purple">Colore Viola</option>
+                                            <option value="silver">Colore Argento</option>
+                                            <option value="golden">Colore Oro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-size" class="form-label">Taglia:</label>
+                                        <select class="form-select rounded-5" id="product-size">
+                                            <option selected>Seleziona...</option>
+                                            <option value="1">Taglia S</option>
+                                            <option value="2">Taglia M</option>
+                                            <option value="3">Taglia L</option>
+                                            <option value="4">Taglia XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <button type="button" class="w-100 rounded-5 btn btn-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Aggiungi al carrello</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn rounded-5 btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                    <div class="card shadow rounded-5 mb-3">
+                        <img src="img/Donne/img18.png" class="no-event card-img-top" style="border-radius: 2rem 2rem 0rem 0rem;" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Mini Gonna</h5>
+                            <p class="card-text">Prezzo: €50.00</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-color" class="form-label">Colore:</label>
+                                        <select class="form-select rounded-5" id="product-color">
+                                            <option selected>Seleziona...</option>
+                                            <option value="black">Colore Nero</option>
+                                            <option value="white">Colore Bianco</option>
+                                            <option value="blue">Colore Blu</option>
+                                            <option value="red">Colore Rosso</option>
+                                            <option value="yellow">Colore Giallo</option>
+                                            <option value="purple">Colore Viola</option>
+                                            <option value="silver">Colore Argento</option>
+                                            <option value="golden">Colore Oro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-size" class="form-label">Taglia:</label>
+                                        <select class="form-select rounded-5" id="product-size">
+                                            <option selected>Seleziona...</option>
+                                            <option value="1">Taglia S</option>
+                                            <option value="2">Taglia M</option>
+                                            <option value="3">Taglia L</option>
+                                            <option value="4">Taglia XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <button type="button" class="w-100 rounded-5 btn btn-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Aggiungi al carrello</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn rounded-5 btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                    <div class="card shadow rounded-5 mb-3">
+                        <img src="img/Donne/img19.png" class="no-event card-img-top" style="border-radius: 2rem 2rem 0rem 0rem;" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Top + Pantalone</h5>
+                            <p class="card-text">Prezzo: €45.00</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-color" class="form-label">Colore:</label>
+                                        <select class="form-select rounded-5" id="product-color">
+                                            <option selected>Seleziona...</option>
+                                            <option value="black">Colore Nero</option>
+                                            <option value="white">Colore Bianco</option>
+                                            <option value="blue">Colore Blu</option>
+                                            <option value="red">Colore Rosso</option>
+                                            <option value="yellow">Colore Giallo</option>
+                                            <option value="purple">Colore Viola</option>
+                                            <option value="silver">Colore Argento</option>
+                                            <option value="golden">Colore Oro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-size" class="form-label">Taglia:</label>
+                                        <select class="form-select rounded-5" id="product-size">
+                                            <option selected>Seleziona...</option>
+                                            <option value="1">Taglia S</option>
+                                            <option value="2">Taglia M</option>
+                                            <option value="3">Taglia L</option>
+                                            <option value="4">Taglia XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <button type="button" class="w-100 rounded-5 btn btn-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Aggiungi al carrello</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn rounded-5 btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3">
+                    <div class="card shadow rounded-5 mb-3">
+                        <img src="img/Donne/img10.png" class="no-event card-img-top" style="border-radius: 2rem 2rem 0rem 0rem;" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Abito da Motoria</h5>
+                            <p class="card-text">Prezzo: €75.00</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-color" class="form-label">Colore:</label>
+                                        <select class="form-select rounded-5" id="product-color">
+                                            <option selected>Seleziona...</option>
+                                            <option value="black">Colore Nero</option>
+                                            <option value="white">Colore Bianco</option>
+                                            <option value="blue">Colore Blu</option>
+                                            <option value="red">Colore Rosso</option>
+                                            <option value="yellow">Colore Giallo</option>
+                                            <option value="purple">Colore Viola</option>
+                                            <option value="silver">Colore Argento</option>
+                                            <option value="golden">Colore Oro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="product-size" class="form-label">Taglia:</label>
+                                        <select class="form-select rounded-5" id="product-size">
+                                            <option selected>Seleziona...</option>
+                                            <option value="1">Taglia S</option>
+                                            <option value="2">Taglia M</option>
+                                            <option value="3">Taglia L</option>
+                                            <option value="4">Taglia XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <button type="button" class="w-100 rounded-5 btn btn-dark"><i class="fa-solid fa-cart-shopping"></i>&#160; Aggiungi al carrello</button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn rounded-5 btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sm animate__animated animate__fadeIn animate__delay-1s">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-5 mb-3 border-top">
+                <div class="col-md-4 mb-3 mx-2 pe-5">
+                    <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <img class="img-fluid rounded-5" src="img/img-icons/logo.PNG" width="150" />
+                    </a>
+                    <p class="text-body-secondary">&copy; 2023 - Nova Moda</p>
+                    <hr>
+                    <div class="mb-3">
+                        <form>
+                            <h5>Iscrivi alla nostra newsletter</h5>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <div class="input-group mb-3">
+                                    <label for="newsletter" class="visually-hidden">Indirizzo Email</label>
+                                    <input id="newsletter" type="email" class="form-control" placeholder="Indirizzo Email" aria-describedby="button-addon" required="true" />
+                                    <button class="btn btn-dark rounded-0" type="button" id="button-addon">Iscriviti</button>
+                                </div>
+                            </div>
+                            <p>Iscrivendoti alla nostra newsletter puoi ricevere informazioni sulle prossime offerte e anche cupons.</p>
+                        </form>
+                        <ul class="list-unstyled d-flex">
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-pinterest fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                            <li class="me-3"><a class="link-body-emphasis" href="#"><i class="fa-solid fa-rss fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col mb-3 mx-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><h5><i class="fa-solid fa-person"></i>&#160; Uomo</h5></li>
+                        <li class="nav-item mb-2"><a href="man.html" class="nav-link p-0 text-body-secondary">Vestiti Uomo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offerte sui vestiti dei Uomini</a></li>
+                        <li class="nav-item my-2 mt-3"><h5><i class="fa-solid fa-person-dress"></i>&#160; Donna</h5>
+                        <li class="nav-item mb-2"><a href="woman.html" class="nav-link p-0 text-body-secondary">Vestiti Donne</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offerte sui vestiti delle Donne</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 mx-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><h5><i class="fa-solid fa-child-reaching"></i>&#160; Bambini</h5></li>
+                        <li class="nav-item mb-2"><a href="kids.html" class="nav-link p-0 text-body-secondary">Vestiti Bambini</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offerte sui vestiti dei Bambini</a></li>
+                        <li class="nav-item mb-2 mt-3"><h5><i class="fa-solid fa-masks-theater"></i>&#160; Novità Cosplay</h5></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cosplay per Uomo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cosplay per Donna</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cosplay per Bambini</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3 mx-2">
+                    <h5><i class="fa-solid fa-circle-info"></i>&#160; Altro...</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Profilo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Carrello</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Contatti</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Assistenza</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Su di noi...</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Politica sui Dati</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <button onclick="topFunction()" id="GoTop" title="Go to top" class="animate__animated animate__fadeInLeft">&#160;&#160;<i class="fa-solid fa-circle-arrow-up fa-lg"></i>&#160;&#160;</button>
+        <button id="Search" class="openBtn animate__animated animate__fadeInLeft" onclick="openSearch()">&#160;&#160;<i class="fa-solid fa-magnifying-glass fa-lg"></i>&#160;&#160;</button>
+        <div id="myOverlay" class="overlay animate__animated animate__fadeIn">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa-solid fa-xmark fa-1x"></i></span>
+            <div class="overlay-content">
+                <form>
+                    <img class="img-fluid rounded-4 mb-5 m-auto" src="img/img-icons/logo.PNG" alt="Logo" width="150">
+                    <h3 class="text-light mb-5">Usa la barra di ricerca per trovare il prodotto che cerchi...</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="search" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon" />
+                        <button class="btn btn-lg btn-outline-light border-start" type="button" id="button-addon"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            let mybutton = document.getElementById("GoTop");
+	
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+
+            function openSearch() {
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function closeSearch() {
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
